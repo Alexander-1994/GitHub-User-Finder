@@ -1,8 +1,8 @@
-import { LocalGithubUser } from 'types';
-import { StatisticItem } from 'components/StatisticItem';
+import { LocalGithubUser } from '../../../../types';
+import { StatisticItem } from '../StatisticItem';
 import styles from './UserStatistic.module.scss';
 
-export interface UserStatisticProps extends Pick<LocalGithubUser, 'repos' | 'following' | 'followers'> {}
+interface UserStatisticProps extends Pick<LocalGithubUser, 'repos' | 'following' | 'followers'> {}
 
 export const UserStatistic = ({repos, following, followers}: UserStatisticProps) => (
 	<div className={styles.userStatistic}>
