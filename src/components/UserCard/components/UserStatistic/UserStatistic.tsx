@@ -1,5 +1,5 @@
 import { LocalGithubUser } from '../../../../types';
-import { StatisticItem } from '../StatisticItem';
+import { StatisticItem } from './components/StatisticItem';
 import styles from './UserStatistic.module.scss';
 
 interface UserStatisticProps extends Pick<LocalGithubUser, 'repos' | 'following' | 'followers'> {}
