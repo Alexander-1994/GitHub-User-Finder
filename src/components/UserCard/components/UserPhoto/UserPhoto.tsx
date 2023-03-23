@@ -7,6 +7,6 @@ export const UserPhoto = ({avatar, name}: UserPhotoProps) => (
 	<img 
 		className={styles.avatar}
 		src={avatar}
-		alt={name}
+		alt={name ? name : 'avatar'}
 	/>
 );

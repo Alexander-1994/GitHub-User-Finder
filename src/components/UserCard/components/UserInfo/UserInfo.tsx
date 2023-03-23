@@ -27,7 +27,6 @@ export const UserInfo = ({company, blog, location, twitter}: UserInfoProps) => {
 		{
 			icon: <TwitterIcon />,
 			text: twitter,
-			isLink: true,
 		},
 	]
 

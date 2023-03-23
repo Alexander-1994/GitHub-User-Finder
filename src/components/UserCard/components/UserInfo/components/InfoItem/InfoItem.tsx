@@ -20,12 +20,12 @@ export const InfoItem = ({ icon, text, isLink }: InfoItemProps) => {
 			{icon}
 			<div>
 				{isLink && text ? (
-					<a 
+					<a className={styles.link}
 						href={currentHref}
 						target='_blank'
 						rel='noreferrer'
 					>
-						currentText
+						{currentText}
 					</a>
 				) : currentText}
 			</div>

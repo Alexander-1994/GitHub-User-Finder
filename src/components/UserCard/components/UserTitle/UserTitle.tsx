@@ -1,5 +1,5 @@
 import { LocalGithubUser } from '../../../../types';
-import { localDate } from '../../../../util';
+import { localDate } from '../../../../utils';
 import styles from './UserTitle.module.scss';
 
 interface UserTitleProps extends Pick<LocalGithubUser, 'name' | 'login' | 'created'> {}
